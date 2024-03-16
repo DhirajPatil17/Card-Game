@@ -1,0 +1,28 @@
+
+.container{
+    width:200px;
+    height:200px;
+    background-color: brown;
+    margin-left:-20vmax;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color:azure;
+    font-size: large;
+    /* transform: translate3d(2px, 20%, 3em); */
+    transition: 1s;
+    
+}
+.trail{
+    width:500px;
+    height:500px;
+    background-color: rgb(77, 165, 42);
+   
+    display: block;
+   
+    /* transform: translate3d(2px, 20%, 3em); */
+   
+}
+
+

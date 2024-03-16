@@ -1,0 +1,384 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+.container{
+    width:100%;
+    height: 100vh;
+    background-image: url(Images/Wallpaper.jpeg);
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; */
+}
+.Start{
+    margin: 65vh 0 0 0;
+    padding:12px;
+    font-size: 2.5ch;
+    font-weight:bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(223, 34, 40);
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    transition: 0.2s;
+    
+}
+
+.Start:hover{
+    margin: 65vh 0 0 0;
+    padding:12px;
+    font-size: 2.6ch;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(233, 57, 75);
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;    
+    
+}
+.new_game{
+    padding: 7px;
+    width:10vw;
+    height: 6vmin;
+    background-color: rgb(42, 41, 41);
+    color:white;
+    border: none;
+    outline: none;
+    font-size: 1.4vw;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition:0.5s;
+
+}
+.new_game:hover{
+    padding: 8px;
+    width:10.5vw;
+    height: 6.5vmin;
+    background-color: rgb(219, 217, 217);
+    color:rgb(80, 79, 79);
+    border: none;
+    outline: none;
+    font-size: 1.4vw;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}
+.head{
+    font-size: 3vw;
+    /* background-color: rgb(146, 240, 145); */
+    color:white;
+    /* text-align: center;   */
+    padding:4px;
+    /* background-color:rgba(red, green, blue, alpha); */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    
+}
+
+.heading{
+    height:fit-content;
+    background-color: rgb(146, 240, 145);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding:3px;
+    transition: 2s;
+    gap:1.3rem;
+
+}
+.winner{
+    font-size:3.5vw;
+    height:48vmax;
+
+}
+
+
+.con{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+.first{
+    /* background-color: rgb(193, 222, 135);     */
+    width: 20vmin;
+    height:91vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 0 0.9rem 0.9rem 0;
+    box-shadow: 1px 2px 4px  grey;
+    gap:1.2rem;
+    
+    /* background-color: #008000; */
+}
+.third{
+    /* background-color: rgb(135, 222, 145); */
+    width: 20vmin;
+    height:91vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 0.9rem 0 0 0.9rem;
+    box-shadow: 0 0 3px 4px #9e9e9d;
+    /* background-color: aqua; */
+}
+.second{
+    /* background-color: rgb(178, 181, 178); */
+    width: inherit;
+    height:90vh;
+    gap:1rem;
+
+}
+.top{
+    width: 99.6%;
+    height:10%;
+    /* background-color: rgb(154, 246, 185); */
+    border:2px solid grey;
+    border-radius: 0 0 0.5rem 0.5rem;
+    display:flex;
+    flex-direction:column-reverse;
+    text-align: center;
+    align-items: center;
+    box-shadow: 1px 1px 4px  grey;
+}
+.middle{
+    width: inherit;
+    height:79%;
+    background-color: rgb(237, 250, 243);
+    border-radius: 1rem;
+    display: flex;
+    width: 100%;
+    padding-top: 8px;
+    flex-wrap: wrap;
+    /* background-image: url(Images/poker-background.jpg); */
+    background-size: cover;
+    justify-content: center;
+    gap:1.5rem;
+    /* box-shadow: 2px 2px 2px 2px rgb(207, 237, 174); */
+
+    
+}
+.cards{
+    /* background-color:rgb(244, 244, 94); */
+    width:18vmin;
+    height: 19vmin;
+    cursor: pointer;
+    color:white;
+    
+    /* background-image: url('Images/card-back.jpg'); */
+
+}
+
+.bottom{
+    width: 99.5%;
+    height:10%;
+    /* background-color: rgb(21, 0, 255); */
+    display: flex;
+    flex-direction: column-reverse;
+    vertical-align: bottom;
+    align-items: center;
+    box-shadow: 4px 1px 8px  grey;
+
+
+}
+.score{
+    font-size: 5ch;
+    background-color: rgb(234, 241, 50);
+    width: fit-content;
+    height: 100%;
+    padding:0.5%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 4px 1px 8px  grey;
+    font-weight: bolder;
+    color:rgb(237, 16, 16);
+    border-radius: 0 0 60% 60%;
+
+}
+.Left{
+    height:50vmin;
+    float: left;
+    color: rgb(252, 252, 252);
+    width:fit-content;
+    font-size: 2ch;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius:0 0.5rem 0.5rem 0;
+    background-color: rgb(118, 246, 118);
+    border: none;
+    box-shadow: 2px 2px 4px #008000;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    /* box-shadow: 2px 2px 4px #008000; */
+    transition: 0.1s;
+}
+.Left:hover{
+    height:50.9vmin;
+
+    padding: 9px;
+    
+}
+.Right{
+    height:50vmin;
+    float: left;
+    color: rgb(252, 252, 252);
+    width:fit-content;
+    font-size: 2ch;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius:0.5rem 0 0 0.5rem;
+    background-color: rgb(118, 246, 118);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    box-shadow: 0 1px 3px 2px #008000;
+    transition: 0.1s;
+
+}
+.Right:hover{
+    height:50.9vh;
+   
+    padding: 9px;
+    box-shadow: 0 1px 3px 2px #008000;
+
+}
+.exit{
+    width:fit-content;
+    padding:10px;
+    font-size: 2.5ch;
+    background-color: rgb(241, 74, 74);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem 0.5rem 0 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    transition: 0.1s;
+}
+.exit:hover{
+    width:fit-content;
+    height: fit-content;
+    padding:11px;
+
+}
+.flip-card-inner{
+    position: relative;
+    width:100%;
+    height: 100%;
+    border-radius: 1.2rem; 
+    text-align: center;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+}
+.flipped{
+    transform:translateX(-100% ) rotateY(180deg);
+}
+
+.cards:hover .flip-card-inner{
+    
+    box-shadow: 3px 3px 5px #929279;
+    border-radius: 1.2rem; 
+  
+}
+.flip-card-front, .flip-card-back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    border-radius: 1.2rem; 
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-front{
+    color:black;
+    border-radius: 1.2rem; 
+    
+}
+.flip-card-front img{
+    width:18vmin;
+    height: 19vmin;
+}
+
+
+.flip-card-back{
+
+    /* color:aliceblue; */
+    transform: rotateY(180deg);
+    border-radius: 1.2rem; 
+    
+}
+img
+{  width:18vmin;
+    height: 19vmin;
+    border-radius: 1.2rem;
+    transform: rotateY(180deg);
+
+}
+.hide{
+    visibility: hidden;
+    transition-duration: 0.2s;
+    transition: 0.2s;
+
+}
+.anchor{
+    width:18vmin;
+    height: 19vmin;
+    cursor: pointer;
+    color:white;
+    
+
+}
+.transit{
+    transform: translateX(40em);
+}
+
+.game_winner{
+    width: fit-content;
+    height: fit-content;
+    color:white;
+    background-color: #008000;
+    text-align: center;
+    padding: 6px;
+    z-index: -1;
+    margin: 9px;
+    font-size: 30px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    border-radius: 0.5rem;
+    transition: 2s;
+ 
+}
+
+
+.cards.fall {
+    animation: fallAway forwards 0.5s ease-out 1;
+}
+
+@keyframes fallAway {
+    0% {
+      transform: rotateZ(0deg);
+      top: 0;
+      opacity: 1;
+    }
+    25% {
+      transform: rotateZ(-50deg);
+    }
+    
+    100% {
+      top: 300px;
+      transform: rotateZ(-180deg);
+      opacity: 0;
+    }
+  }
